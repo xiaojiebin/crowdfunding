@@ -314,7 +314,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -326,7 +326,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -570,6 +570,7 @@
       <workItem from="1578359811141" duration="8310000" />
       <workItem from="1578380643510" duration="707000" />
       <workItem from="1578381431982" duration="566000" />
+      <workItem from="1578383662101" duration="601000" />
     </task>
     <task id="LOCAL-00001" summary="测试文件用于测试数据的变化">
       <created>1570782479189</created>
@@ -666,7 +667,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="154114000" />
+    <option name="totallyTimeSpent" value="154715000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -679,8 +680,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49947643" visible="true" weight="0.2457356" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49947643" visible="true" weight="0.24840085" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -1111,20 +1113,20 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/crowdfunding-main/pom.xml">
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1056">
           <caret line="48" column="21" selection-start-line="36" selection-start-column="7" selection-end-line="48" selection-end-column="21" />
         </state>
       </provider>
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
     </entry>
     <entry file="file://$PROJECT_DIR$/crowdfunding-potal-impl/pom.xml">
-      <provider selected="true" editor-type-id="text-editor" />
       <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/crowdfunding-manager-impl/pom.xml">
-      <provider selected="true" editor-type-id="text-editor" />
       <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.0.0.RELEASE/spring-webmvc-4.0.0.RELEASE-sources.jar!/org/springframework/web/servlet/DispatcherServlet.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1151,12 +1153,12 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1297">
           <caret line="205" column="30" selection-start-line="205" selection-start-column="30" selection-end-line="205" selection-end-column="30" />
         </state>
       </provider>
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
     </entry>
     <entry file="file://$PROJECT_DIR$/crowdfunding-main/src/main/java/top/xiao/filter/MyFilter.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1203,12 +1205,12 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/crowdfunding-potal-api/pom.xml">
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="440">
           <caret line="20" column="19" lean-forward="true" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
         </state>
       </provider>
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
     </entry>
     <entry file="file://$PROJECT_DIR$/crowdfunding-potal-api/src/main/java/top/xiao/potal/service/TestServiceImpl.java" />
     <entry file="file://$PROJECT_DIR$/crowdfunding-bean/src/main/java/top/xiao/pojo/User.java">
