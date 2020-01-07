@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="module_crowdfunding-potal-api" default="compile.module.crowdfunding-potal-api">
+  <dirname property="module.crowdfunding-potal-api.basedir" file="${ant.file.module_crowdfunding-potal-api}"/>
+  
+  <property name="module.jdk.home.crowdfunding-potal-api" value="${project.jdk.home}"/>
+  <property name="module.jdk.bin.crowdfunding-potal-api" value="${project.jdk.bin}"/>
+  <property name="module.jdk.classpath.crowdfunding-potal-api" value="${project.jdk.classpath}"/>
+  
+  <property name="compiler.args.crowdfunding-potal-api" value="-encoding UTF-8 -source 8 -target 1.8 ${compiler.args}"/>
+  
+  <property name="crowdfunding-potal-api.output.dir" value="${module.crowdfunding-potal-api.basedir}/target/classes"/>
+  <property name="crowdfunding-potal-api.testoutput.dir" value="${module.crowdfunding-potal-api.basedir}/target/test-classes"/>
+  
+  <path id="crowdfunding-potal-api.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="crowdfunding-potal-api.module.production.classpath">
+    <path refid="${module.jdk.classpath.crowdfunding-potal-api}"/>
+    <pathelement location="${crowdfunding-bean.output.dir}"/>
+    <path refid="library.maven:_org.projectlombok:lombok:1.18.8.classpath"/>
+  </path>
+  
+  <path id="crowdfunding-potal-api.runtime.production.module.classpath">
+    <pathelement location="${crowdfunding-potal-api.output.dir}"/>
+    <path refid="crowdfunding-bean.runtime.production.module.classpath"/>
+    <path refid="library.maven:_org.projectlombok:lombok:1.18.8.classpath"/>
+  </path>
+  
+  <path id="crowdfunding-potal-api.module.classpath">
+    <path refid="${module.jdk.classpath.crowdfunding-potal-api}"/>
+    <pathelement location="${crowdfunding-potal-api.output.dir}"/>
+    <pathelement location="${crowdfunding-bean.testoutput.dir}"/>
+    <pathelement location="${crowdfunding-bean.output.dir}"/>
+    <path refid="library.maven:_org.projectlombok:lombok:1.18.8.classpath"/>
+  </path>
+  
+  <path id="crowdfunding-potal-api.runtime.module.classpath">
+    <pathelement location="${crowdfunding-potal-api.testoutput.dir}"/>
+    <pathelement location="${crowdfunding-potal-api.output.dir}"/>
+    <path refid="crowdfunding-bean.runtime.module.classpath"/>
+    <path refid="library.maven:_org.projectlombok:lombok:1.18.8.classpath"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.crowdfunding-potal-api">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.crowdfunding-potal-api">
+    <patternset refid="excluded.from.module.crowdfunding-potal-api"/>
+  </patternset>
+  
+  <path id="crowdfunding-potal-api.module.sourcepath">
+    <dirset dir="${module.crowdfunding-potal-api.basedir}">
+      <include name="src/main/java"/>
+      <include name="src/main/resources"/>
+    </dirset>
+  </path>
+  
+  <path id="crowdfunding-potal-api.module.test.sourcepath">
+    <dirset dir="${module.crowdfunding-potal-api.basedir}">
+      <include name="src/test/java"/>
+    </dirset>
+  </path>
+  
+  
+  <target name="compile.module.crowdfunding-potal-api" depends="compile.module.crowdfunding-potal-api.production,compile.module.crowdfunding-potal-api.tests" description="Compile module crowdfunding-potal-api"/>
+  
+  <target name="compile.module.crowdfunding-potal-api.production" depends="register.custom.compilers,compile.module.crowdfunding-bean" description="Compile module crowdfunding-potal-api; production classes">
+    <mkdir dir="${crowdfunding-potal-api.output.dir}"/>
+    <javac2 destdir="${crowdfunding-potal-api.output.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.crowdfunding-potal-api}/javac">
+      <compilerarg line="${compiler.args.crowdfunding-potal-api}"/>
+      <bootclasspath refid="crowdfunding-potal-api.module.bootclasspath"/>
+      <classpath refid="crowdfunding-potal-api.module.production.classpath"/>
+      <src refid="crowdfunding-potal-api.module.sourcepath"/>
+      <patternset refid="excluded.from.compilation.crowdfunding-potal-api"/>
+    </javac2>
+    
+    <copy todir="${crowdfunding-potal-api.output.dir}">
+      <fileset dir="${module.crowdfunding-potal-api.basedir}/src/main/java">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+      <fileset dir="${module.crowdfunding-potal-api.basedir}/src/main/resources">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+    </copy>
+  </target>
+  
+  <target name="compile.module.crowdfunding-potal-api.tests" depends="register.custom.compilers,compile.module.crowdfunding-potal-api.production" description="compile module crowdfunding-potal-api; test classes" unless="skip.tests">
+    <mkdir dir="${crowdfunding-potal-api.testoutput.dir}"/>
+    <javac2 destdir="${crowdfunding-potal-api.testoutput.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.crowdfunding-potal-api}/javac">
+      <compilerarg line="${compiler.args.crowdfunding-potal-api}"/>
+      <bootclasspath refid="crowdfunding-potal-api.module.bootclasspath"/>
+      <classpath refid="crowdfunding-potal-api.module.classpath"/>
+      <src refid="crowdfunding-potal-api.module.test.sourcepath"/>
+      <patternset refid="excluded.from.compilation.crowdfunding-potal-api"/>
+    </javac2>
+    
+    <copy todir="${crowdfunding-potal-api.testoutput.dir}">
+      <fileset dir="${module.crowdfunding-potal-api.basedir}/src/test/java">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+    </copy>
+  </target>
+  
+  <target name="clean.module.crowdfunding-potal-api" description="cleanup module">
+    <delete dir="${crowdfunding-potal-api.output.dir}"/>
+    <delete dir="${crowdfunding-potal-api.testoutput.dir}"/>
+  </target>
+</project>
