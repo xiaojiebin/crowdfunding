@@ -23,14 +23,14 @@
         </property>
     </bean>
     <!--    定义异常处理类-->
-    <bean id="exceptionResolver"
+  <!--  <bean id="exceptionResolver"
           class="org.springframework.web.servlet.handler.SimpleMappingExceptionResolver">
         <property name="exceptionMappings">
             <props>
                 <prop key="java.lang.Exception">other/error</prop>
             </props>
         </property>
-    </bean>
+    </bean>-->
     <!--    1.开启SpringMVC注解模式-->
     <!-- 简化配置：
     (1)自动注册DefaultAnootationHandlerMapping,AnotationMethodHandlerAdapter

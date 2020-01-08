@@ -13,8 +13,6 @@ import lombok.ToString;
  * @data 2019/9/29 19:24
  */
 @Data
-@NoArgsConstructor
-@AllArgsConstructor
 @ToString
 public class User {
     private Long id;

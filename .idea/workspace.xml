@@ -6,7 +6,27 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1fb74662-df24-493b-9339-aa7cee4c24eb" name="Default Changelist" comment="项目架构全部完成 by 肖杰斌" />
+    <list default="true" id="1fb74662-df24-493b-9339-aa7cee4c24eb" name="Default Changelist" comment="项目架构全部完成 by 肖杰斌">
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/servlet_api.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crowdfunding-bean/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/crowdfunding-bean/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crowdfunding-bean/src/main/java/top/xiao/pojo/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/crowdfunding-bean/src/main/java/top/xiao/pojo/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crowdfunding-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/crowdfunding-common/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crowdfunding-main/src/main/resource/spring/spring-web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/crowdfunding-main/src/main/resource/spring/spring-web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crowdfunding-main/target/classes/spring/spring-web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/crowdfunding-main/target/classes/spring/spring-web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crowdfunding-main/target/crowdfunding-main/WEB-INF/classes/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/crowdfunding-main/target/crowdfunding-main/WEB-INF/classes/log4j.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crowdfunding-main/target/crowdfunding-main/WEB-INF/classes/spring/spring-web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/crowdfunding-main/target/crowdfunding-main/WEB-INF/classes/spring/spring-web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crowdfunding-main/target/crowdfunding-main/WEB-INF/lib/crowdfunding-bean-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/crowdfunding-main/target/crowdfunding-main/WEB-INF/lib/crowdfunding-bean-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crowdfunding-main/target/crowdfunding-main/WEB-INF/lib/crowdfunding-manager-api-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/crowdfunding-main/target/crowdfunding-main/WEB-INF/lib/crowdfunding-manager-api-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crowdfunding-main/target/crowdfunding-main/WEB-INF/lib/crowdfunding-manager-imp-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/crowdfunding-main/target/crowdfunding-main/WEB-INF/lib/crowdfunding-manager-imp-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crowdfunding-main/target/crowdfunding-main/WEB-INF/lib/crowdfunding-potal-api-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/crowdfunding-main/target/crowdfunding-main/WEB-INF/lib/crowdfunding-potal-api-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crowdfunding-main/target/crowdfunding-main/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/crowdfunding-main/target/crowdfunding-main/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crowdfunding-manager-api/src/main/java/top/xiao/manager/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/crowdfunding-manager-api/src/main/java/top/xiao/manager/dao/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crowdfunding-manager-api/target/classes/top/xiao/manager/dao/UserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/crowdfunding-manager-api/target/classes/top/xiao/manager/dao/UserDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crowdfunding-manager-impl/src/main/resources/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/crowdfunding-manager-impl/src/main/resources/mapper/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crowdfunding-manager-impl/target/classes/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/crowdfunding-manager-impl/target/classes/mapper/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/crowdfunding-main/target/" />
@@ -68,78 +88,6 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/crowdfunding-manager-api/src/main/java/top/xiao/manager/dao/TestDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
-              <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/crowdfunding-manager-api/src/main/java/top/xiao/manager/dao/UserDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/crowdfunding-manager-api/src/main/java/top/xiao/manager/service/TestService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/crowdfunding-manager-impl/src/main/java/top/xiao/manager/service/impl/TestServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="616">
-              <caret line="38" selection-start-line="38" selection-end-line="38" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.0.0.RELEASE/spring-aop-4.0.0.RELEASE-sources.jar!/org/springframework/aop/support/AopUtils.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5940">
-              <caret line="318" selection-start-line="318" selection-end-line="318" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/crowdfunding-manager-impl/src/main/resources/mapper/UserMapper.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="7" column="34" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/crowdfunding-main/src/main/java/top/xiao/controller/TestController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="440">
-              <caret line="29" column="90" selection-start-line="29" selection-start-column="82" selection-end-line="29" selection-end-column="90" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/crowdfunding-main/src/main/resource/spring/spring-service.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="440">
@@ -151,8 +99,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/crowdfunding-main/src/main/resource/spring/spring-web.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="836">
-              <caret line="38" column="28" selection-start-line="38" selection-start-column="28" selection-end-line="38" selection-end-column="28" />
+            <state relative-caret-position="129">
+              <caret line="32" column="14" selection-start-line="25" selection-start-column="2" selection-end-line="32" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -160,8 +108,86 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/crowdfunding-main/src/main/resource/spring/spring-dao.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="682">
-              <caret line="31" column="58" selection-start-line="31" selection-start-column="44" selection-end-line="31" selection-end-column="58" />
+            <state relative-caret-position="364">
+              <caret line="31" column="53" selection-start-line="31" selection-start-column="53" selection-end-line="31" selection-end-column="53" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/crowdfunding-bean/src/main/java/top/xiao/pojo/User.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="106">
+              <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/crowdfunding-bean/pom.xml">
+          <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="100">
+              <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/crowdfunding-manager-impl/src/main/java/top/xiao/manager/service/impl/UserServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="451">
+              <caret line="25" column="10" selection-start-line="25" selection-start-column="10" selection-end-line="25" selection-end-column="10" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="276">
+              <caret line="211" column="25" selection-start-line="207" selection-start-column="11" selection-end-line="211" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/crowdfunding-common/pom.xml">
+          <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="509">
+              <caret line="180" column="21" selection-start-line="180" selection-start-column="21" selection-end-line="180" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/crowdfunding-manager-impl/src/main/java/top/xiao/manager/controller/UserController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="379">
+              <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/crowdfunding-manager-impl/src/main/java/top/xiao/manager/service/impl/TestServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="689">
+              <caret line="38" selection-start-line="38" selection-end-line="38" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -222,9 +248,7 @@
         <option value="$PROJECT_DIR$/crowdfunding-main/src/main/resource/mybatis/mybatis-config.xml" />
         <option value="$PROJECT_DIR$/crowdfunding-manager-impl/src/main/java/top/xiao/manager/impl/TestServiceImpl.java" />
         <option value="$PROJECT_DIR$/crowdfunding-manager-api/src/main/java/top/xiao/manager/service/TestService.java" />
-        <option value="$PROJECT_DIR$/crowdfunding-bean/src/main/java/top/xiao/pojo/User.java" />
         <option value="$PROJECT_DIR$/crowdfunding-main/src/main/webapp/other/error.jsp" />
-        <option value="$PROJECT_DIR$/crowdfunding-manager-impl/src/main/resources/mapper/UserMapper.xml" />
         <option value="$PROJECT_DIR$/测试文件" />
         <option value="$PROJECT_DIR$/test" />
         <option value="$PROJECT_DIR$/测试.txt" />
@@ -234,22 +258,26 @@
         <option value="$PROJECT_DIR$/crowdfunding-main/src/main/java/top/xiao/utils/SwaggerConfiger.java" />
         <option value="$PROJECT_DIR$/crowdfunding-main/src/main/java/top/xiao/utils/ApiConfig.java" />
         <option value="$PROJECT_DIR$/crowdfunding-main/src/main/java/top/xiao/utils/ApiConfige.java" />
-        <option value="$PROJECT_DIR$/crowdfunding-bean/pom.xml" />
         <option value="$PROJECT_DIR$/module_crowdfunding-parent.xml" />
-        <option value="$PROJECT_DIR$/crowdfunding-common/pom.xml" />
-        <option value="$PROJECT_DIR$/crowdfunding-main/src/main/resource/spring/spring-web.xml" />
         <option value="$PROJECT_DIR$/crowdfunding-main/src/main/java/top/xiao/listener/StartSystemListener.java" />
         <option value="$PROJECT_DIR$/crowdfunding-main/src/main/java/top/xiao/controller/TestController.java" />
         <option value="$PROJECT_DIR$/crowdfunding-main/src/main/java/top/xiao/utils/SwaggerConfig.java" />
         <option value="$PROJECT_DIR$/crowdfunding-main/src/main/java/top/xiao/utils/ConfigBean.java" />
         <option value="$PROJECT_DIR$/crowdfunding-main/pom.xml" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/crowdfunding-main/src/main/java/top/xiao/filter/MyFilter.java" />
         <option value="$PROJECT_DIR$/crowdfunding-main/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/crowdfunding-potal-api/src/main/java/top/xiao/potal/service/TestServiceImpl.java" />
         <option value="$PROJECT_DIR$/crowdfunding-main/src/main/resource/spring/spring-dao.xml" />
         <option value="$PROJECT_DIR$/crowdfunding-main/src/main/resource/spring/spring-service.xml" />
         <option value="$PROJECT_DIR$/crowdfunding-manager-impl/src/main/java/top/xiao/manager/service/impl/TestServiceImpl.java" />
+        <option value="$PROJECT_DIR$/crowdfunding-manager-api/src/main/java/top/xiao/manager/dao/UserDao.java" />
+        <option value="$PROJECT_DIR$/crowdfunding-manager-impl/src/main/resources/mapper/UserMapper.xml" />
+        <option value="$PROJECT_DIR$/crowdfunding-main/src/main/resource/spring/spring-web.xml" />
+        <option value="$PROJECT_DIR$/crowdfunding-bean/src/main/java/top/xiao/pojo/User.java" />
+        <option value="$PROJECT_DIR$/crowdfunding-bean/pom.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/crowdfunding-common/pom.xml" />
+        <option value="$PROJECT_DIR$/crowdfunding-manager-impl/src/main/java/top/xiao/manager/service/impl/UserServiceImpl.java" />
       </list>
     </option>
   </component>
@@ -279,22 +307,7 @@
   </component>
   <component name="MavenProjectNavigator">
     <treeState>
-      <expand>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="crowdfunding-common" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="crowdfunding-common" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="crowdfunding-common" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
-        </path>
-      </expand>
+      <expand />
       <select />
     </treeState>
   </component>
@@ -314,6 +327,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -322,11 +336,112 @@
               <item name="crowdfunding-parent" type="b2602c69:ProjectViewProjectNode" />
               <item name="crowdfunding-parent" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="crowdfunding-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="crowdfunding-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="crowdfunding-bean" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="crowdfunding-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="crowdfunding-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="crowdfunding-bean" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="crowdfunding-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="crowdfunding-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="crowdfunding-bean" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="crowdfunding-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="crowdfunding-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="crowdfunding-common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="crowdfunding-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="crowdfunding-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="crowdfunding-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="crowdfunding-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="crowdfunding-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="crowdfunding-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="crowdfunding-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="crowdfunding-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="crowdfunding-manager-impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="crowdfunding-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="crowdfunding-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="crowdfunding-manager-impl" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="crowdfunding-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="crowdfunding-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="crowdfunding-manager-impl" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="crowdfunding-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="crowdfunding-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="crowdfunding-manager-impl" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="crowdfunding-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="crowdfunding-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="crowdfunding-manager-impl" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="manager" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="crowdfunding-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="crowdfunding-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="crowdfunding-manager-impl" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="manager" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="crowdfunding-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="crowdfunding-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="crowdfunding-manager-impl" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="manager" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+              <item name="base" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="crowdfunding-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="crowdfunding-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="crowdfunding-manager-impl" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="manager" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -667,7 +782,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="154715000" />
+    <option name="totallyTimeSpent" value="157081000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -680,9 +795,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49947643" visible="true" weight="0.24840085" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49947643" visible="true" weight="0.25906184" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -694,7 +808,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.92697227" weight="0.30010718" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.91364604" weight="0.21543409" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.91364604" visible="true" weight="0.2027897" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49840087" weight="0.3290461" />
@@ -703,7 +817,7 @@
       <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.4989339" weight="0.45123258" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.073027715" side_tool="true" weight="0.36334404" />
-      <window_info active="true" anchor="bottom" id="Messages" order="12" sideWeight="0.49733475" visible="true" weight="0.28510183" />
+      <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.49733475" weight="0.28510183" />
       <window_info anchor="bottom" id="Java Enterprise" order="13" sideWeight="0.49946696" weight="0.3290461" />
       <window_info anchor="bottom" id="Database Changes" order="14" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="15" sideWeight="0.4989339" weight="0.3290461" />
@@ -802,47 +916,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-log4j12/1.7.7/slf4j-log4j12-1.7.7-sources.jar!/org/slf4j/impl/Log4jLoggerAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="198" selection-start-line="198" selection-end-line="198" />
-          <folding>
-            <element signature="e#6258#6259#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/slf4j/jcl-over-slf4j/1.7.6/jcl-over-slf4j-1.7.6-sources.jar!/org/apache/commons/logging/impl/SLF4JLocationAwareLog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="66" selection-start-line="66" selection-end-line="66" />
-          <folding>
-            <element signature="e#2127#2128#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.0.0.RELEASE/spring-webmvc-4.0.0.RELEASE-sources.jar!/org/springframework/web/servlet/mvc/annotation/ResponseStatusExceptionResolver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="54" selection-start-line="54" selection-end-line="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/4.0.0.RELEASE/spring-core-4.0.0.RELEASE-sources.jar!/org/springframework/core/annotation/AnnotationUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="264" selection-start-line="264" selection-end-line="264" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/4.0.0.RELEASE/spring-core-4.0.0.RELEASE-sources.jar!/org/springframework/util/Assert.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="110" selection-start-line="110" selection-end-line="110" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.0.0.RELEASE/spring-webmvc-4.0.0.RELEASE-sources.jar!/org/springframework/web/servlet/handler/AbstractHandlerExceptionResolver.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="175">
@@ -1126,7 +1199,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/crowdfunding-manager-impl/pom.xml">
       <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="387">
+          <caret line="19" column="21" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
+        </state>
+      </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.0.0.RELEASE/spring-webmvc-4.0.0.RELEASE-sources.jar!/org/springframework/web/servlet/DispatcherServlet.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1149,14 +1226,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1297">
-          <caret line="205" column="30" selection-start-line="205" selection-start-column="30" selection-end-line="205" selection-end-column="30" />
         </state>
       </provider>
     </entry>
@@ -1213,34 +1282,10 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/crowdfunding-potal-api/src/main/java/top/xiao/potal/service/TestServiceImpl.java" />
-    <entry file="file://$PROJECT_DIR$/crowdfunding-bean/src/main/java/top/xiao/pojo/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/crowdfunding-manager-api/src/main/java/top/xiao/manager/dao/TestDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/crowdfunding-manager-api/src/main/java/top/xiao/manager/service/TestService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
           <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/crowdfunding-manager-impl/src/main/java/top/xiao/manager/service/impl/TestServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="616">
-          <caret line="38" selection-start-line="38" selection-end-line="38" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1254,20 +1299,54 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/crowdfunding-manager-impl/src/main/resources/mapper/UserMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="34" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/crowdfunding-main/src/main/java/top/xiao/controller/TestController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="29" column="90" selection-start-line="29" selection-start-column="82" selection-end-line="29" selection-end-column="90" />
+        <state relative-caret-position="430">
+          <caret line="38" column="27" selection-start-line="38" selection-start-column="27" selection-end-line="38" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crowdfunding-manager-impl/src/main/java/top/xiao/manager/controller/base/BaseController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crowdfunding-manager-api/src/main/java/top/xiao/manager/dao/TestDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="12" column="28" selection-start-line="10" selection-start-column="11" selection-end-line="12" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crowdfunding-manager-api/src/main/java/top/xiao/manager/dao/UserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="14" column="25" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crowdfunding-manager-impl/src/main/resources/mapper/UserMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="43" selection-start-line="6" selection-start-column="43" selection-end-line="6" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crowdfunding-main/src/main/resource/spring/spring-dao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="31" column="53" selection-start-line="31" selection-start-column="53" selection-end-line="31" selection-end-column="53" />
         </state>
       </provider>
     </entry>
@@ -1280,22 +1359,72 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/crowdfunding-main/src/main/resource/spring/spring-web.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="836">
-          <caret line="38" column="28" selection-start-line="38" selection-start-column="28" selection-end-line="38" selection-end-column="28" />
+        <state relative-caret-position="129">
+          <caret line="32" column="14" selection-start-line="25" selection-start-column="2" selection-end-line="32" selection-end-column="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/crowdfunding-main/src/main/resource/spring/spring-dao.xml">
+    <entry file="file://$PROJECT_DIR$/crowdfunding-bean/src/main/java/top/xiao/pojo/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="682">
-          <caret line="31" column="58" selection-start-line="31" selection-start-column="44" selection-end-line="31" selection-end-column="58" />
+        <state relative-caret-position="106">
+          <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/crowdfunding-manager-api/src/main/java/top/xiao/manager/dao/UserDao.java">
+    <entry file="file://$PROJECT_DIR$/crowdfunding-bean/pom.xml">
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
+        <state relative-caret-position="100">
+          <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="211" column="25" selection-start-line="207" selection-start-column="11" selection-end-line="211" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crowdfunding-common/pom.xml">
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="509">
+          <caret line="180" column="21" selection-start-line="180" selection-start-column="21" selection-end-line="180" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crowdfunding-manager-impl/src/main/java/top/xiao/manager/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="379">
+          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crowdfunding-manager-impl/src/main/java/top/xiao/manager/service/impl/TestServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="689">
+          <caret line="38" selection-start-line="38" selection-end-line="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crowdfunding-manager-impl/src/main/java/top/xiao/manager/service/impl/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="451">
+          <caret line="25" column="10" selection-start-line="25" selection-start-column="10" selection-end-line="25" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1352,7 +1481,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>crowdfunding-common</last-edited>
+          <last-edited>crowdfunding-bean</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1377,7 +1506,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>servlet-api</last-edited>
+          <last-edited>Maven: aopalliance:aopalliance:1.0</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
