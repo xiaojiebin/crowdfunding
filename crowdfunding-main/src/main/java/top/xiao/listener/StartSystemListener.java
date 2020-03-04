@@ -1,6 +1,8 @@
 package top.xiao.listener;
 
 
+import org.apache.log4j.Logger;
+
 import javax.servlet.ServletContext;
 import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;
@@ -16,16 +18,19 @@ import javax.servlet.annotation.WebListener;
 
 @WebListener
 public class StartSystemListener implements ServletContextListener {
+
+    Logger logger = Logger.getLogger(StartSystemListener.class);
+
     @Override
     public void contextInitialized(ServletContextEvent servletContextEvent) {
         ServletContext servletContext = servletContextEvent.getServletContext();
         String contextPath = servletContext.getContextPath();
         servletContext.setAttribute("APP_PATH", contextPath);
-        System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>>>>> 容器初始化完成.");
+        logger.info(">>>>>>>>>>>>>>>>>>>>>>>>>>>>> 容器初始化完成.");
     }
 
     @Override
     public void contextDestroyed(ServletContextEvent servletContextEvent) {
-        System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>>>>> 容器初销毁完成.");
+        logger.info(">>>>>>>>>>>>>>>>>>>>>>>>>>>>> 容器初销毁完成.");
     }
 }

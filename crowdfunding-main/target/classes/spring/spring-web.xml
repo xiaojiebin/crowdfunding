@@ -23,13 +23,17 @@
         </property>
     </bean>
     <!--    定义异常处理类-->
-    <bean id="exceptionResolver"
-          class="org.springframework.web.servlet.handler.SimpleMappingExceptionResolver">
+
+    <bean id="exceptionResolver" class="top.xiao.utils.common.utils.CustomSimpleMappingExceptionResolver">
+        <!--        异常信息变量名配置异常的属性值为ex，那么在错误页面中够可以通过${ex}来获取异常-->
+        <property name="exceptionAttribute" value="ex"></property>
+        <!--        需要做特殊处理的异常，用类名或者完全路径作为key，异常页面作为值-->
         <property name="exceptionMappings">
             <props>
-                <prop key="java.lang.Exception">other/error</prop>
+                <prop key="top.xiao.utils.common.ex.LoginFailException"></prop>
             </props>
         </property>
+
     </bean>
     <!--    1.开启SpringMVC注解模式-->
     <!-- 简化配置：
@@ -49,16 +53,27 @@
         <property name="resolveLazily" value="true"/>
     </bean>
 
+
+    <!--    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+            &lt;!&ndash;        <property name="viewClass" value="org.springframework.web.servlet.view.JstlView"/>&ndash;&gt;
+            <property name="prefix" value="/WEB-INF/jsp/"/>
+            <property name="suffix" value=".jsp"/>
+            <property name="contentType" value="text/html;charset=UTF-8"/>
+            <property name="order" value="2"></property>
+        </bean>-->
+
+    <!--配置 html 视图解析器-->
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
-        <!--        <property name="viewClass" value="org.springframework.web.servlet.view.JstlView"/>-->
-        <property name="prefix" value="/WEB-INF/"/>
-        <property name="suffix" value=".jsp"/>
+        <property name="prefix" value="/WEB-INF/html/"/>
+        <property name="suffix" value=".html"/>
         <property name="contentType" value="text/html;charset=UTF-8"/>
+        <property name="order" value="2"></property>
     </bean>
     <!--向容器自动注入配置-->
     <context:annotation-config/>
     <!--    扫描Controller类-->
-    <context:component-scan base-package="top.xiao.controller,top.xiao.utils,top.xiao.listener"/>
+    <context:component-scan
+            base-package="top.xiao.controller,top.xiao.utils,top.xiao.listener,top.xiao.manager.controller"/>
     <mvc:resources mapping="swagger-ui.html" location="classpath:/META-INF/resources/"/>
     <mvc:resources mapping="/webjars/**" location="classpath:/META-INF/resources/webjars/"/>
 

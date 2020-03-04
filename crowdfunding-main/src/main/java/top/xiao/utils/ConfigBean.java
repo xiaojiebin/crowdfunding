@@ -1,6 +1,7 @@
 package top.xiao.utils;
 
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer;
 import org.springframework.web.servlet.view.freemarker.FreeMarkerView;
 import org.springframework.web.servlet.view.freemarker.FreeMarkerViewResolver;
@@ -13,6 +14,7 @@ import java.util.Properties;
  * @Package top.xiao.utils
  * @data 2020/1/2 16:32
  */
+@Configuration
 public class ConfigBean {
     /**
      * FreeMarker视图解析器
@@ -20,7 +22,7 @@ public class ConfigBean {
     @Bean
     public FreeMarkerViewResolver initFreeMarkerViewResolver() {
         FreeMarkerViewResolver freeMarkerViewResolver = new FreeMarkerViewResolver();
-        freeMarkerViewResolver.setOrder(1);
+        freeMarkerViewResolver.setOrder(0);
         freeMarkerViewResolver.setSuffix(".html");
         freeMarkerViewResolver.setContentType("text/html;charset=utf-8");
         freeMarkerViewResolver.setViewClass(new FreeMarkerView().getClass());
@@ -33,7 +35,7 @@ public class ConfigBean {
     @Bean
     public FreeMarkerConfigurer initFreeMarkerConfigurer() {
         FreeMarkerConfigurer freeMarkerConfigurer = new FreeMarkerConfigurer();
-        String[] str = new String[]{"/ftl/", "/view/"};
+        String[] str = new String[]{"/WEB-INF/html/"};
         freeMarkerConfigurer.setTemplateLoaderPaths(str);
         freeMarkerConfigurer.setDefaultEncoding("UTF-8");
         Properties properties = new Properties();

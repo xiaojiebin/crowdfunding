@@ -46,7 +46,9 @@ public class TestServiceImpl implements TestService {
 
     @Override
     public List<User> getAllUser() {
-        return dao.getAllUser();
+
+        return null;
+    //    return dao.getAllUser();
     }
 
 
