@@ -77,9 +77,6 @@
         var ii = -1;
         $.ajax({
             type: "POST",
-            headers: {
-                Accept: "application/json; charset=utf-8"
-            },
             url: "${APP_PATH}/loginAjax.do",
             beforeSend: function () {
                 ii = layer.load();

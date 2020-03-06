@@ -70,13 +70,14 @@ public class DispatcherController extends BaseController {
         return "main";
     }
 
-    @ResponseBody
-    @RequestMapping("/doLoginAjax.do")
-    public ApiResult<Boolean> doLoginAjax(User user, HttpSession session) {
-        User Ruser = userService.queryUser(user);
-        //向session中存入用户信息
-        session.setAttribute(Const.LOGIN_USER, user);
-        return success("good");
+
+    @RequestMapping("/user.htm")
+    public String user() {
+        return "user";
     }
 
+    @RequestMapping("/top.htm")
+    public String top() {
+        return "common/top";
+    }
 }

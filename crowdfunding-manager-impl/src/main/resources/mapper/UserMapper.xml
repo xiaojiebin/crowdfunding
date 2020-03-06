@@ -57,5 +57,12 @@
 		from t_user where loginacct=#{loginacct};
 	</select>
 
+    <select id="pageUser" resultType="user">
+	select * from t_user  order by id limit #{start},#{count};
 
+    </select>
+<!--	获取总条数-->
+	<select id="countPage" resultType="java.lang.Integer">
+		select count(*) from  t_user;
+	</select>
 </mapper>

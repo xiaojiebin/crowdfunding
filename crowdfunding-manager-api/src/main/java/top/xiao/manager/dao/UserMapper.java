@@ -1,5 +1,6 @@
 package top.xiao.manager.dao;
 
+import org.apache.ibatis.annotations.Param;
 import top.xiao.pojo.User;
 
 import java.util.List;
@@ -20,4 +21,8 @@ public interface UserMapper {
 
 
     int regUser(User user);
+
+    List<User> pageUser(@Param("start") int start, @Param("count") int count);
+
+    int countPage();
 }

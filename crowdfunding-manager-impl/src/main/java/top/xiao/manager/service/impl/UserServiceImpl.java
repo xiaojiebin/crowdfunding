@@ -72,4 +72,24 @@ public class UserServiceImpl implements UserService {
         user.setCreatetime(sdf.format(d));
         int i = dao.insert(user);
     }
+
+
+    @Override
+    public List<User> pageUser(User user) {
+        int pageNum = user.getPageNum();
+        int start = (pageNum - 1) * user.getPageSize();
+        //获取总页数
+        //总条数
+        int totalNumber = dao.countPage();
+        int pageSize = user.getPageSize();
+        int pages = totalNumber / pageSize;
+        if (totalNumber % pageSize != 0) {
+            pages++;
+        }
+        int count = user.getPageSize();
+        List<User> users = dao.pageUser(start, count);
+        users.get(0).setTotalPage(pages);
+        users.get(0).setPageNum(user.getPageNum());
+        return users;
+    }
 }

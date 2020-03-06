@@ -1,24 +1,71 @@
 package top.xiao.pojo;
 
 
-import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.NoArgsConstructor;
-import lombok.ToString;
+import top.xiao.pojo.base.BasePageQuery;
 
-/**
- * @author 肖
- * @version 1.0
- * @Package priv.xiao.entity
- * @data 2019/9/29 19:24
- */
 @Data
-@NoArgsConstructor
-@AllArgsConstructor
-@ToString
-public class User {
-    private Long id;
+public class User extends BasePageQuery {
+    private Integer id;
+
+    private String loginacct;
+
+    private String userpswd;
+
     private String username;
-    private String password;
-    private String passwordSalt;
+
+    private String email;
+
+    private String createtime;
+
+    private String Salt;
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public String getLoginacct() {
+        return loginacct;
+    }
+
+    public void setLoginacct(String loginacct) {
+        this.loginacct = loginacct == null ? null : loginacct.trim();
+    }
+
+    public String getUserpswd() {
+        return userpswd;
+    }
+
+    public void setUserpswd(String userpswd) {
+        this.userpswd = userpswd == null ? null : userpswd.trim();
+    }
+
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username == null ? null : username.trim();
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email == null ? null : email.trim();
+    }
+
+    public String getCreatetime() {
+        return createtime;
+    }
+
+    public void setCreatetime(String createtime) {
+        this.createtime = createtime == null ? null : createtime.trim();
+    }
+
 }

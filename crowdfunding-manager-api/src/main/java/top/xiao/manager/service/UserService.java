@@ -20,4 +20,6 @@ public interface UserService {
     User queryUser(User user);
 
     void regUser(User user);
+
+    List<User> pageUser(User user);
 }
