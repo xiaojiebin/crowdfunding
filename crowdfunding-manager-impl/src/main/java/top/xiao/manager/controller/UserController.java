@@ -17,6 +17,8 @@ import top.xiao.pojo.User;
 import top.xiao.pojo.base.BasePageQuery;
 import top.xiao.utils.common.ApiResult;
 
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 /**
@@ -38,10 +40,55 @@ public class UserController extends BaseController {
         return "user";
     }
 
+
+    /**
+     * 分页
+     *
+     * @param user
+     * @return 分页数据
+     */
     @RequestMapping("/user.do")
     @ResponseBody
     public ApiResult<List<User>> user(User user) {
         List<User> users = service.pageUser(user);
         return success(users);
     }
+
+    /**
+     * 查询
+     *
+     * @param user
+     * @return
+     */
+    @RequestMapping("/findUser.do")
+    @ResponseBody
+    public ApiResult<List<User>> findUser(User user) {
+        List<User> user1 = service.findUser(user);
+        return success(user1);
+    }
+
+    /**
+     * 删除单个用户
+     */
+    @RequestMapping("/deleteUser.do")
+    @ResponseBody
+    public ApiResult<String> deleUser(int id) {
+        try {
+            service.deleteUser(id);
+            return success("删除成功。");
+        } catch (Exception e) {
+            return fail(e.getMessage());
+        }
+    }
+
+    @RequestMapping("/deleteUserByIds.do")
+    @ResponseBody
+    public ApiResult<String> deleteUserIds(String[] ids) {
+
+        System.out.println("测试成功.");
+        service.deleteUserByIds(ids);
+        return null;
+    }
+
+
 }

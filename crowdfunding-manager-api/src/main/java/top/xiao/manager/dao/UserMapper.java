@@ -25,4 +25,10 @@ public interface UserMapper {
     List<User> pageUser(@Param("start") int start, @Param("count") int count);
 
     int countPage();
+
+    int findUserCount(User user);
+
+    List<User> findUser(@Param("user") User user, @Param("start") int start, @Param("count") int count);
+
+    int deleteUserByIds(String[] ids);
 }

@@ -1,6 +1,4 @@
-/**
- * Created by 张永风 on 2016/1/13.
- */
+
 (function (window, document, undefined) {
     var Include39485748323 = function () {
     }
@@ -92,13 +90,12 @@
 
 
 function logout() {
-    debugger
     $.ajax({
         type: "POST",
-        url: "logout.do",
+        url: "/myProject/logout.do",
         success: function (result) {
             console.log(result);
-            window.location.href = "index.htm"
+            window.location.href = "/myProject/index.htm"
         }
     })
 }

@@ -80,4 +80,9 @@ public class DispatcherController extends BaseController {
     public String top() {
         return "common/top";
     }
+
+    @RequestMapping("/add.htm")
+    public String add(){
+        return "add";
+    }
 }

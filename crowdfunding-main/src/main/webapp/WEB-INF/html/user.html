@@ -16,6 +16,8 @@
     <script src="${APP_PATH}/bootstrap/js/bootstrap.min.js"></script>
     <script src="${APP_PATH}/script/docs.min.js"></script>
     <script src="${APP_PATH}/js/page.js"></script>
+    <script src="${APP_PATH}/js/user.js"></script>
+    <script src="${APP_PATH }/jquery/layer/layer.js"></script>
     <title>用户</title>
     <style>
         .tree li {
@@ -50,7 +52,7 @@
                                                                                              style="float:right">3</span></span>
                         <ul style="margin-top:10px;">
                             <li style="height:30px;">
-                                <a href="user.html" style="color:red;"><i class="glyphicon glyphicon-user"></i> 用户维护</a>
+                                <a href="user.htm" style="color:red;"><i class="glyphicon glyphicon-user"></i> 用户维护</a>
                             </li>
                             <li style="height:30px;">
                                 <a href="role.html"><i class="glyphicon glyphicon-king"></i> 角色维护</a>
@@ -113,21 +115,23 @@
                     <h3 class="panel-title"><i class="glyphicon glyphicon-th"></i> 数据列表</h3>
                 </div>
                 <div class="panel-body">
-                    <form class="form-inline" role="form" style="float:left;">
+                    <form class="form-inline" onsubmit="return false;" role="form" style="float:left;">
                         <div class="form-group has-feedback">
                             <div class="input-group">
                                 <div class="input-group-addon">查询条件</div>
-                                <input class="form-control has-success" type="text" placeholder="请输入查询条件">
+                                <input class="form-control has-success" id="findData" placeholder="请输入查询条件">
                             </div>
                         </div>
-                        <button type="button" class="btn btn-warning"><i class="glyphicon glyphicon-search"></i> 查询
-                        </button>
+                        <a href="javascript:void(0)" class="btn btn-warning" onclick="findUser(1)"><i
+                                class="glyphicon glyphicon-search"></i> 查询
+                        </a>
                     </form>
-                    <button type="button" class="btn btn-danger" style="float:right;margin-left:10px;"><i
+                    <button id="delete" type="button" class="btn btn-danger" style="float:right;margin-left:10px;"><i
                             class=" glyphicon glyphicon-remove"></i> 删除
                     </button>
                     <button type="button" class="btn btn-primary" style="float:right;"
-                            onclick="window.location.href='add.html'"><i class="glyphicon glyphicon-plus"></i> 新增
+                            onclick="window.location.href='${APP_PATH}/add.htm'"><i
+                            class="glyphicon glyphicon-plus"></i> 新增
                     </button>
                     <br>
                     <hr style="clear:both;">
@@ -136,7 +140,7 @@
                             <thead>
                             <tr>
                                 <th width="30">#</th>
-                                <th width="30"><input type="checkbox"></th>
+                                <th width="30"><input type="checkbox" id="check"></th>
                                 <th>账号</th>
                                 <th>名称</th>
                                 <th>邮箱地址</th>
@@ -149,11 +153,11 @@
                             <tr>
                                 <td colspan="6" align="center">
 
-                            <div class="box">
-                                <div id="pagination1" class="page fl"></div>
+                                    <div class="box">
+                                        <div id="pagination1" class="page fl"></div>
 
-                            </div>
-                            </td>
+                                    </div>
+                                </td>
                             </tr>
                             </tfoot>
                         </table>
@@ -164,72 +168,5 @@
     </div>
 </div>
 
-
-
-<script type="text/javascript">
-    var str="";
-    var pageNum;
-    var total;
-    function page(pageNum_P){
-        pageNum=pageNum_P;
-        $.ajax({
-            url: "${APP_PATH}/user/user.do",
-            type: "POST",
-            data:  {
-                pageNum:pageNum
-            },
-            success: function (data) {
-                debugger
-                str="";
-                $('tbody').empty();
-                console.log(data.result);
-                total=data.result[0].totalPage;
-                $.each(data.result,function (i,obj) {
-                    console.log(i+":"+obj.id);
-                    str+=" <tr>\n" +
-                        "                                <td>"+obj.id+"</td>\n" +
-                        "                                <td><input type=\"checkbox\"></td>\n" +
-                        "                                <td>"+obj.loginacct+"</td>\n" +
-                        "                                <td>"+obj.username+"</td>\n" +
-                        "                                <td>"+obj.email+"</td>\n" +
-                        "                                <td>\n" +
-                        "                                    <button type=\"button\" class=\"btn btn-success btn-xs\"><i\n" +
-                        "                                            class=\" glyphicon glyphicon-check\"></i></button>\n" +
-                        "                                    <button type=\"button\" class=\"btn btn-primary btn-xs\"><i\n" +
-                        "                                            class=\" glyphicon glyphicon-pencil\"></i></button>\n" +
-                        "                                    <button type=\"button\" class=\"btn btn-danger btn-xs\"><i\n" +
-                        "                                            class=\" glyphicon glyphicon-remove\"></i></button>\n" +
-                        "                                </td>\n" +
-                        "                            </tr>"
-                    $("#pagination1").pagination({
-                        currentPage: pageNum,
-                        totalPage: total,
-                        callback: function(current) {
-                            console.log(current)
-                            page(current);
-                        }
-                    });
-                })
-                $('tbody').append(str);
-                console.log("调用了.");
-            },
-            error: function () {
-
-            }
-        });
-    }
-    $(function() {
-        page(1);
-
-    });
-
-    $("tbody .btn-success").click(function () {
-        window.location.href = "assignRole.html";
-    });
-    $("tbody .btn-primary").click(function () {
-        window.location.href = "edit.html";
-    });
-</script>
-<div id="page" class="page"></div>
 </body>
 </html>

@@ -22,4 +22,10 @@ public interface UserService {
     void regUser(User user);
 
     List<User> pageUser(User user);
+
+    List<User> findUser(User user);
+
+    void deleteUser(int id);
+
+    String deleteUserByIds(String [] ids);
 }

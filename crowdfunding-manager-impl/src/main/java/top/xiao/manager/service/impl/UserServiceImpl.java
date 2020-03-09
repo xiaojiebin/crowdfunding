@@ -10,10 +10,12 @@ import top.xiao.manager.service.UserService;
 import top.xiao.pojo.User;
 import top.xiao.utils.common.ex.ExistedException;
 import top.xiao.utils.common.ex.LoginFailException;
+import top.xiao.utils.common.ex.NotExistException;
 import top.xiao.utils.common.utils.Const;
 import top.xiao.utils.common.utils.MD5Util;
 
 import java.text.SimpleDateFormat;
+import java.util.Arrays;
 import java.util.Date;
 import java.util.List;
 import java.util.Map;
@@ -74,6 +76,12 @@ public class UserServiceImpl implements UserService {
     }
 
 
+    /**
+     * 分页展示用户信息
+     *
+     * @param user
+     * @return
+     */
     @Override
     public List<User> pageUser(User user) {
         int pageNum = user.getPageNum();
@@ -91,5 +99,47 @@ public class UserServiceImpl implements UserService {
         users.get(0).setTotalPage(pages);
         users.get(0).setPageNum(user.getPageNum());
         return users;
+    }
+
+    /**
+     * 查询+分页
+     *
+     * @param user
+     * @return
+     */
+    @Override
+    public List<User> findUser(User user) {
+        int pageNum = user.getPageNum();
+        int start = (pageNum - 1) * user.getPageSize();
+        int totalNumber = dao.findUserCount(user);
+        int pageSize = user.getPageSize();
+        int pages = totalNumber / pageSize;
+        if (totalNumber % pageSize != 0) {
+            pages++;
+        }
+        int count = user.getPageSize();
+        List<User> users = dao.findUser(user, start, count);
+        users.get(0).setTotalPage(pages);
+        users.get(0).setPageNum(user.getPageNum());
+        return users;
+    }
+
+    @Override
+    public void deleteUser(int id){
+        int i = dao.deleteByPrimaryKey(id);
+        if (i==0){
+            throw  new NotExistException("此用户已删除");
+        }
+
+    }
+
+    @Override
+    public String deleteUserByIds(String[] ids) {
+
+        int i=dao.deleteUserByIds(ids);
+        if (i<=0){
+            return "删除失败！";
+        }
+        return "删除成功!";
     }
 }
